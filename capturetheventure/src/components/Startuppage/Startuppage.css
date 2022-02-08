@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+
+.startupheading{
+    font-size: 40px;
+    margin: 5vh;
+    font-weight: 700;
+    display: inline-block;
+    position: relative;
+    color:#212429 ;
+
+}
+.startupheading::after{
+    content: "";
+    height: 4px;
+    width: 20%;
+    background: #4dd9fd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    /* top: 5%; */
+}
+.startuppage{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    color:#212429 ;
+}
+.startupdescription{
+    width: 80vw;
+    /* height: 85vh; */
+    /* border-top: 2px solid black;
+    border-left: 2px solid black; */
+    margin-top: 6vh;
+}
+/* .startupphoto{
+    border: 2px solid black;
+} */
+.startupheader{
+    margin-top: 60px;
+    display: flex;
+}
+.aboutit{
+   margin-left: 40px;
+   justify-content: center ;
+   width: 40vw;
+}
+.content{
+    margin-left: 60px;
+}
+.description{
+    margin-top: 10vh;
+    text-align: justify;
+    width: 70vw;
+}
+.infosectionlist{
+font-weight: 700;
+font-size: 15px;
+margin-top: 3vh;
+margin-bottom: 3vh;
+}
+.iconstartup{
+    color: #4dd9fd;
+
+}
+.infosectionlistb{
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    }
+.informationpalletee{
+    display: flex;
+    margin-top: 6vh;
+    position: relative;
+    left: 18vw;
+}
+
+.infovalues{
+    margin-left: 10vw;
+}

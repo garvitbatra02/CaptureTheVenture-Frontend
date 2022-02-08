@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');
+.maincontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.loginsection{
+    width: 275px;
+    height: 70vh;
+    border: 2px solid black;    
+    border-radius: 30px;
+    background-color: #212429;
+    color: white;
+
+}
+.signupheading{
+    margin: 30px;
+    font-size: 30px;
+    font-weight: 500;
+ 
+}
+.loginentries{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+
+}
+.inputtextentry
+{
+    min-width:'30vw';
+    height:'4vh';
+    border-radius:'300px'
+}
+.entry{
+
+margin-top: 2vh;
+font-weight: 500;
+}

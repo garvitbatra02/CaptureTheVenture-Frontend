@@ -1,0 +1,110 @@
+import React, { useState } from 'react';
+import './style.css'
+import image1 from "./img/log.svg"
+import image2 from "./img/register.svg"
+const LoginandSignup = () => {
+const [signup, setSignup] = useState(false);
+
+  return <div>
+      <div class={`container ${signup==true?'sign-up-mode':''}`}>
+      <div class="forms-container">
+        <div class="signin-signup">
+          <form action="#" class="sign-in-form">
+            <h2 class="title">Sign in</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Email ID" />
+            </div>  
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+            <input type="submit" value="Login" class="btn solid" />
+            <p class="social-text">Or Sign in with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          {/* start of signup part */}
+          <form action="#" class="sign-up-form">
+            <h2 class="title">Sign up</h2>
+            <div class="input-field">
+              <i class="fas fa-user"></i>
+              <input type="text" placeholder="Username" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-envelope"></i>
+              <input type="email" placeholder="Email" />
+            </div>
+            <div class="input-field">
+              <i class="fas fa-lock"></i>
+              <input type="password" placeholder="Password" />
+            </div>
+      
+            <input type="submit" class="btn" value="Sign up" />
+            <p class="social-text">Or Sign up with social platforms</p>
+            <div class="social-media">
+              <a href="#" class="social-icon">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="#" class="social-icon">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </form>
+          {/* this is end of signup page */}
+        </div>
+      </div>
+
+      <div class="panels-container">
+        <div class="panel left-panel">
+          <div class="content">
+            <h3>New here ?</h3>
+            <p>
+              Lets come together to form a community to create new opportunities and let the community to explore you
+            </p>
+            <button class="btn transparent" id="sign-up-btn" onClick={()=>{
+                setSignup(true);
+            }}>
+              Sign up
+            </button>
+          </div>
+          <img src={image1} class="image" alt="" />
+        </div>
+        <div class="panel right-panel">
+          <div class="content">
+            <h3>One of us ?</h3>
+            <p>
+            Already a startup registered Here, come on login and create new opportunities
+            </p>
+            <button class="btn transparent" id="sign-in-btn" onClick={()=>{
+                setSignup(false);
+            }}>
+              Sign in
+            </button>
+          </div>
+          <img src={image2} class="image" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>;
+};
+
+export default LoginandSignup;
